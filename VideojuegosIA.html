@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universo Gamer - Página con IA</title>
+<style>
+
+/* ESTILOS GENERALES */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Special Elite', cursive;
+    background: linear-gradient(135deg,#0f172a,#111827,#1e1b4b);
+    color:white;
+}
+
+/* AUDIO */
+.audio-gamer{
+    position:absolute;
+    top:20px;
+    right:20px;
+    z-index:100;
+}
+
+.audio-gamer audio{
+    width:250px;
+}
+
+/* HEADER */
+header{
+    height:100vh;
+    background:url("D:\Imgs html/vibrante-f.avif");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+}
+
+.hero{
+    background:rgba(0,0,0,.6);
+    padding:40px;
+    border-radius:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#00e5ff;
+    text-shadow:0 0 20px #00e5ff;
+}
+
+/* MENU */
+nav{
+    position:sticky;
+    top:0;
+    background:#111827;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 0 15px #00e5ff;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#00e5ff;
+}
+
+/* SECCIONES */
+section{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:80px 0;
+}
+
+h2{
+    font-size:3rem;
+    text-align:center;
+    color:#00e5ff;
+    margin-bottom:30px;
+    text-shadow:0 0 20px #00e5ff;    
+}
+
+/* TARJETAS */
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+/* CONSOLAS */
+.consolas{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.consola{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.consola img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* TABLA */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th,td{
+    border:1px solid white;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#00e5ff;
+    color:black;
+}
+
+/* BENEFICIOS */
+.beneficios{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.ventaja{
+    background:#064e3b;
+    padding:20px;
+    border-radius:15px;
+}
+
+.desventaja{
+    background:#7f1d1d;
+    padding:20px;
+    border-radius:15px;
+}
+
+video,audio{
+    width:100%;
+    margin-top:20px;
+}
+
+/* BOTONES */
+.btn{
+    display:inline-block;
+    background:#00e5ff;
+    color:black;
+    padding:10px 15px;
+    text-decoration:none;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+/* FOOTER */
+footer{
+    background:#020617;
+    text-align:center;
+    padding:30px;
+}
+.menu-navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    background-color: #333;
+}
+
+.menu-navegacion li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none; 
+}
+
+.menu-navegacion li a:hover {
+    background-color: #111;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="audio-gamer">
+    <audio controls autoplay loop>
+        <source src="D:\LUIS ANTONIO/freesound_community-happy-14585.mp3.mpeg" type="audio/mp3">
+    </audio>
+</div>
+
+<div class="hero">
+<h1>UNIVERSO GAMER</h1>
+<p>Explora el increíble mundo de los videojuegos</p>
+</div>
+
+</header>
+
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#noticias">Noticias</a>
+<a href="#consolas">Consolas</a>
+<a href="#beneficios">Beneficios y Desventajas</a>
+</nav>
+
+<section id="inicio">
+
+<h2>¿Qué son los videojuegos?</h2>
+
+<div class="card">
+
+<img src="D:\Imgs html/MARIOB.jpg">
+<font size="5" align="justify">
+<p>
+Los videojuegos son programas electrónicos interactivos que permiten a los usuarios jugar, aprender o entretenerse mediante dispositivos como computadoras, consolas y teléfonos móviles. Combinan imágenes, sonido y reglas para crear experiencias divertidas y desafiantes.
+</p>
+<br>
+<h3>Historia</h3>
+<p>
+Los videojuegos surgieron en la década de 1950 como experimentos tecnológicos. En 1972, Pong se convirtió en uno de los primeros éxitos comerciales, impulsando el crecimiento de la industria. Durante los años 80 y 90 aparecieron títulos icónicos como Pac-Man y Super Mario Bros., además de las primeras consolas domésticas populares. Con el avance de Internet y los dispositivos móviles, los videojuegos evolucionaron hasta convertirse en una de las formas de entretenimiento más importantes del mundo.
+</p>
+<br>
+<h3>Importancia</h3>
+<p>Además de entretener, los videojuegos pueden desarrollar habilidades como la creatividad, la coordinación, la resolución de problemas y el trabajo en equipo.</p>
+</font> 
+
+</div>
+
+</section>
+
+<section id="noticias">
+
+<h2>Noticias Gamer</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="D:\Imgs html\starfox.jpg">
+<font size="5" align="justify">
+<h3 align="center">Nuevos Lanzamientos</h3>
+<br>
+<p>Junio de 2026 trae importantes estrenos para los jugadores. Entre los títulos más esperados destacan Gothic Remake, el regreso de la clásica saga de rol con gráficos renovados, y Star Fox, que marca el retorno de una de las franquicias más populares de Nintendo. También se han anunciado nuevos juegos para PC, PlayStation, Xbox y Nintendo Switch 2, ampliando la oferta para los jugadores.</p>
+</div>
+
+<div class="card">
+<img src="D:\Imgs html\geforcext.jpg">
+<h3 align="center">Avances Tecnológicos</h3>
+<br>
+<p>La tecnología sigue transformando la industria de los videojuegos. Durante los eventos de junio, como el Summer Game Fest y el Xbox Games Showcase, las compañías presentaron mejoras en gráficos, inteligencia artificial y experiencias inmersivas. Además, el desarrollo de la realidad virtual y los servicios de juego en la nube continúa permitiendo experiencias más realistas y accesibles para millones de usuarios.</p>
+</div>
+
+</div>
+</font>
+<video controls>
+<source src="D:\Imgs html/TrRE9.mp4" type="video/mp4">
+</video>
+
+</section>
+
+<section id="consolas">
+
+<h2>Consolas Más Populares</h2>
+
+<div class="consolas">
+
+<div class="consola">
+    <font size="5">
+<img src="D:\Imgs html/PS5P.jpg">
+<h3>PlayStation 5</h3>
+</div>
+
+<div class="consola">
+<img src="D:\Imgs html/xboxs.jpeg">
+<h3>Xbox Series X</h3>
+</div>
+
+<div class="consola">
+<img src="D:\Imgs html/nintendosw.jpg">
+<h3>Nintendo Switch 2</h3>
+</font>
+</div>
+
+</div>
+<font size="5">
+<table>
+
+<tr>
+<th>Consola</th>
+<th>Empresa</th>
+<th>Lanzamiento</th>
+</tr>
+
+<tr>
+<td>PS5</td>
+<td>Sony</td>
+<td>2020</td>
+</tr>
+
+<tr>
+<td>Xbox Series X</td>
+<td>Microsoft</td>
+<td>2020</td>
+</tr>
+
+<tr>
+<td>Nintendo Switch</td>
+<td>Nintendo</td>
+<td>20</td>
+</tr>
+</font>
+</table>
+
+<br>
+
+<a href="https://www.playstation.com" class="btn" target="_blank">PlayStation</a>
+
+<a href="https://www.xbox.com" class="btn" target="_blank">Xbox</a>
+
+<a href="https://www.nintendo.com" class="btn" target="_blank">Nintendo</a>
+
+</section>
+
+<section id="beneficios">
+
+<h2>Beneficios y Desventajas</h2>
+<font size="6">
+<div class="beneficios">
+
+<div class="ventaja">
+
+<h3>Beneficios</h3>
+
+<ul>
+<li>Mejoran la coordinación.</li>
+<li>Estimulan la creatividad.</li>
+<li>Favorecen la resolución de problemas.</li>
+<li>Desarrollan el trabajo en equipo.</li>
+</ul>
+
+</div>
+
+<div class="desventaja">
+
+<h3>Desventajas</h3>
+
+<ul>
+<li>Posible adicción.</li>
+<li>Menor actividad física.</li>
+<li>Problemas de sueño.</li>
+<li>Uso excesivo del tiempo.</li>
+</ul>
+</font>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>Video Informativo</h3>
+
+<video controls>
+<source src="D:\Imgs html/VentajsyDesv.mp4" type="video/mp4">
+</video>
+
+</div>
+
+</section>
+
+<footer>
+<nav class="menu-navegacion">
+    <ul>
+        <li><a href="file:///D:/INDEX-Videojuegos.html">INDEX</a></li>
+        <li><a href="file:///D:/Videojuegos.html">Videojuegos</a></li>
+        <li><a href="#">Videojuegos - 2da parte</a></li>
+        <li><a href="file:///D:/Videojuegos.html">Universo Gamer - IA</a></li>
+    </ul>
+<h3>🎮 Universo Gamer 🎮</h3>
+
+<p>Proyecto Escolar HTML y CSS</p>
+
+<p>Linares Ortiz Luis Antonio</p>
+<p>Flores Rodriguez Oscar Osmar</p>
+
+<p>2026</p>
+
+</footer>
+
+</body>
+</html>
